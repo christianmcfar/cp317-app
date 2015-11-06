@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Hello Laurier</title>
+		<link rel="stylesheet" 
+				href="jquery/jquery.mobile-1.4.5.css" />
+		<script src="jquery/jquery-1.11.3.min.js"></script>
+		<script>
+			$(document).bind('mobileinit',function(){
+			    $.mobile.changePage.defaults.changeHash = false;
+			    $.mobile.hashListeningEnabled = false;
+			    $.mobile.pushStateEnabled = false;
+			}); 
+		</script>
+		<script src="jquery/jquery.mobile-1.4.5.js"></script>
+		<script src="js/app.js"></script>
+	</head>
+
+	<body>
+	<!-- /start of first page -->
+	<div data-role="page" id="one">
+		<div data-role="header" data-theme="b">
+			<h1>Hello Laurier</h1>
+		</div><!-- /header -->
+
+		<div data-role="content">
+			<p style="text-align:center">CP317 Group 19 Information</p>
+			<p style="text-align:center">Click on the image.</p>
+
+			<img src="images/wlu.png" id="laurier-logo-img" onClick="clickHandler()">
+			
+		</div><!--/content-->
+	</div>
+	<link rel="stylesheet" href="app.css" />
+	</body>
+</html>
